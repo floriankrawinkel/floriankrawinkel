@@ -52,7 +52,7 @@ body{
     font-size: 1.8rem;
     color: var(--text-color);
     margin-left: 4rem;
-    font-weight: 500;
+    font-weight: 00;
     transition: .3s ease;
     border-bottom: 3px solid transparent;
 }
@@ -246,7 +246,7 @@ span{
     flex-direction: column;
 }
 .projects .heading{
-    margin-bottom: 15rem;
+    margin-bottom: 3rem;
 }
 .projects-box img{
     width: 35rem;
@@ -287,6 +287,14 @@ span{
 }
 .project-item p{
     font-size: 1.3rem;
+}
+.project-item a{
+    display: block;    
+    color: inherit;
+    text-decoration: none; 
+}
+.project-item a:hover{    
+    color: inherit;
 }
 .contact{
     background-color: var(--bg-color);
