@@ -236,7 +236,7 @@ span{
     margin: 0rem 0;
 }
 .projects{
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 .projects-box{
     background-size: cover;
@@ -246,7 +246,7 @@ span{
     flex-direction: column;
 }
 .projects .heading{
-    margin-bottom: 3rem;
+    margin-bottom: 15rem;
 }
 .projects-box img{
     width: 35rem;
