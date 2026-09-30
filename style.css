@@ -84,6 +84,12 @@ section{
     justify-content: center;
     margin-top: 3rem;
 }
+.home-content p b{
+    
+    font-weight: 800;
+    text-shadow: 0 0 25px var(--main-color);
+}
+    
 span{
     color: var(--main-color);
 }
@@ -286,7 +292,7 @@ span{
     font-size: 2.8rem;
 }
 .project-item p{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 .project-item a{
     display: block;    
