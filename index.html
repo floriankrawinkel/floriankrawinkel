@@ -92,7 +92,7 @@
                 <h2>PAULA</h2>
                 <p> PAULA stands for Pump Action User Learning Application and is an immersive XR training program for firefighters, 
                     developed in collaboration with the Cologne Fire Department. It allows trainees to practice pump operations without 
-                    requiring an additional vehicle or water.
+                    requiring an additional vehicle or water. sadasdasdasdasdas dasdasdasdasdasd asdasdasdasda sdasdasdda
                 <br><br>Clicking here will take you to the project's page.
                 </p>
                 </a>
@@ -129,26 +129,66 @@
 </section>
 
 <section class="contact" id="contact">
-    <h2 class="heading">Contact <span> Me </span></h2>
+    <h2 class="heading">Contact <span>Me</span></h2>
 
-    <form action="">
+    <form
+        id="contact-form"
+        action="https://formspree.io/f/xyezqgon"
+        method="POST"
+    >
         <div class="input-group">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Your Email">
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                >
             </div>
+
             <div class="input-box">
-                <input type="number" placeholder="Your Phone Number">
-                <input type="text" placeholder="Subject">
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Your Phone Number"
+                >
+
+                <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                >
             </div>
         </div>
 
         <div class="input-group-2">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea
+                name="message"
+                cols="30"
+                rows="10"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <input
+                type="submit"
+                value="Send Message"
+                class="btn"
+            >
+
+            <p id="form-status"></p>
         </div>
     </form>
 </section>
+
 <footer class="footer">
     <div class="social">
         <a href="https://www.linkedin.com/in/florian-krawinkel-320952175/"><i class='bx bxl-linkedin'></i></a>

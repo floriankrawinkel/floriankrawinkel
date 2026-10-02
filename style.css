@@ -53,6 +53,7 @@ body{
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 00;
+    border: 2px solid transparent;
     transition: .3s ease;
     border-bottom: 3px solid transparent;
 }
@@ -338,6 +339,11 @@ span{
 .contact form .btn{
     margin-top: 2rem;
 }
+#form-status {
+    margin-top: 15px;
+    font-size: 1.6rem;
+}
+
 .footer{
     position: relative;
     bottom: 0;

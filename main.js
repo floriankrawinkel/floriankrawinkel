@@ -22,3 +22,45 @@ menuIcon.onclick =  () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle("active");
 }
+
+const form = document.getElementById("contact-form");
+const statusMessage = document.getElementById("form-status");
+
+form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const submitButton = form.querySelector('input[type="submit"]');
+
+    submitButton.disabled = true;
+    submitButton.value = "Sending...";
+    statusMessage.textContent = "";
+
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                "Accept": "application/json"
+            }
+        });
+
+        if (response.ok) {
+            statusMessage.textContent = "Thanks! Your message has been sent.";
+            statusMessage.style.color = "green";
+            form.reset();
+        } else {
+            statusMessage.textContent =
+                "Something went wrong. Please try again.";
+            statusMessage.style.color = "red";
+        }
+    } catch (error) {
+        statusMessage.textContent =
+            "Unable to send the message. Please try again later.";
+        statusMessage.style.color = "red";
+    }
+
+    submitButton.disabled = false;
+    submitButton.value = "Send Message";
+});
