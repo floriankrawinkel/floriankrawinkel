@@ -61,6 +61,10 @@ body{
 .projectDesc-content h1{
     font-size: 5rem;
     margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.projectDesc-content h2{
+    font-size: 1.8rem;
     margin-bottom: 2rem;
 }
 .projectDesc-content p{
@@ -68,6 +72,15 @@ body{
     line-height: 1.6;
     max-width: 100%;
     margin-bottom: 2rem;
+}
+.projectDesc-content img{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    max-height: 65vh;
+    object-fit: cover;
+    border-radius: 1px;
 }
 .navbar a{
     font-size: 1.8rem;
