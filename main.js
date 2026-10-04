@@ -64,3 +64,10 @@ form.addEventListener("submit", async function (event) {
     submitButton.disabled = false;
     submitButton.value = "Send Message";
 });
+
+function playRandomSound() { 
+    const sounds = ['AudioClips/sound1.wav','AudioClips/sound2.wav','AudioClips/sound3.wav'];
+    const randomIndex = Math.floor(Math.random() * sounds.length);  
+    const selectedSound = sounds[randomIndex];
+    const audio = new Audio(selectedSound);  audio.play();
+}
