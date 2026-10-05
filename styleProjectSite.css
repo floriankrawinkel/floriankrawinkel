@@ -73,12 +73,27 @@ body{
     max-width: 100%;
     margin-bottom: 2rem;
 }
-.projectDesc-content img{
+.projectDesc-content-img{
     margin-top: 2rem;
     margin-bottom: 1rem;
     width: 100%;
     height: auto;
     max-height: 65vh;
+    object-fit: cover;
+    border-radius: 1px;
+}
+.projectDesc-content-multipleImg3{
+    margin: 2rem 0rem 1rem;
+    width: 33%;
+    height: auto;
+    max-height: 25vh;
+    object-fit: cover;
+    border-radius: 1px;
+}
+.projectDesc-content-multipleImg2{
+    margin: 2rem 0rem 1rem;
+    width: 49%;
+    height: auto;
     object-fit: cover;
     border-radius: 1px;
 }
