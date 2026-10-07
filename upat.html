@@ -30,15 +30,90 @@
     </div>
     <div class="projectDesc-content">
         <h1>UPAT</h1>
+        <h2>Mixed Reality · Unity · Meta Quest 3 · C# · Pico XR SDK · Eye Tracking · Medical Education · Research Applications</h2>
         <p>
             UPAT (Unseen Patient Attention Training) is a VR attention training program 
             for doctors and medical staff that I created for my bachelor's thesis. 
             It's designed to facilitate research studies and is currently being used by 
             researchers at Technische Hochschule Köln to investigate the potential effects of Visual Delegates in XR trainings.
             <br><br>
-            Feel free to reach out if you have any questions 
-            about my projects or would like to discuss work opportunities.
+            After finishing my work on PAULA I wanted to continue working on XR projects, but I also wanted to try something new. So for my bahcelor's thesis I decided to focus on a topic 
+            that is different from my previous work, while keeping the focus on creating XR-trainings for emergency responders. In consultation with my advisor and the IREX lab I decided to work
+            on an attention training for medical staff, which fitted one of the research lines of the lab. Therefore the goal of the project was to create a VR training that uses the Eye Tracking of the 
+            Pico 3 Neo Pro Eye VR headset to track the user's gaze and provide feedback on their attention. The training was also designed to be used in research studies, so researchers can modify UPAT
+            in a way that fits their research questions. The training is currently being used in a research study to investigate the effects of Visual Delegates on attention in VR trainings at the IREX Lab.
+            <br><br>
+            The title of my bachelor's thesis was: 
+            <br><br>
+            <b>Design, Implementation, and Evaluation of a VR-Based Attention Training Program for Research Using Agile Development Methods</b>
+            <br><br>
+            I worked on the project together with two other students, with my main responsibility being the programming and technical implementation of the Mixed Reality 
+            experience. This was done primarily in Unity and focused on making the different interactions work, connecting the physical and virtual parts of the prototype, and 
+            implementing the training flow. Alongside the software development, I also helped construct the physical prototype.
+            The relationship between the physical and digital layers becomes equally important.
+            <br>
+            <img src="ProjectImages\PAULAImgs\PhysicalFirePump.png" alt="PAULA" class="projectDesc-content-img">
+            <br>
+            The project started with the question of how a firefighter could learn the basic operation of a
+            fire pump in a simulated environment. The training sequence was broken down into several individual steps, 
+            including starting the engine, opening a valve, increasing the pressure to 7 bar, connecting the hose coupling, 
+            and switching from tank operation to suction operation. Instead of simply presenting these steps as instructions, t
+            he application was designed to guide the user through the process interactively.
+            <br><br>
+            I implemented much of this interaction logic in Unity. The Meta Quest 3 and the Meta SDK provided the foundation for 
+            the Mixed Reality experience, while I worked on connecting the individual interactions to the training sequence. 
+            The user was guided through the process using a virtual checklist, and Ghost Hands were later introduced to demonstrate 
+            the intended hand positions and make the interactions easier to understand.
+            <br>
+            <img src="ProjectImages\PAULAImgs\Checklist.png" alt="PAULA" class="projectDesc-content-multipleImg3">
+            <img src="ProjectImages\PAULAImgs\LeverGhostHand.png" alt="PAULA" class="projectDesc-content-multipleImg3">
+            <img src="ProjectImages\PAULAImgs\ModelWithGhostHands.png" alt="PAULA" class="projectDesc-content-multipleImg3">
+            <br>
+            One of the more difficult parts of the project was making the virtual pump line up correctly with the physical prototype. 
+            The entire concept depends on the user perceiving the physical and virtual pump as one object. If the virtual valve appears 
+            a few centimeters away from the physical valve, for example, the user immediately notices the discrepancy when reaching for it. 
+            To deal with this, I worked with the Spatial Anchor system to position the virtual pump relative to the physical prototype.
+            <br><br>
+            This turned out to be much more important than I initially expected. Spatial alignment is easy to overlook when looking at the 
+            system from a purely technical perspective, but from the user's point of view it directly affects whether the interaction feels 
+            believable. The closer the physical and virtual objects were aligned, the less the user had to think about the technology itself.
+            <br>
+            <img src="ProjectImages\PAULAImgs\PolycamModel.jpg" alt="PAULA" class="projectDesc-content-multipleImg2">
+            <img src="ProjectImages\PAULAImgs\Complete3DModel.jpg" alt="PAULA" class="projectDesc-content-multipleImg2">
+            <br>
+            During the development process, the prototype was tested at a university iteration exhibition. 
+            This was one of the points where the project changed significantly because we were able to see 
+            how people interacted with the system without having someone from the development team explain every step.  
+          <br><br>
+            After the iterative development phase, the physical version of PAULA was compared with a version of the training where the interactions 
+            were performed entirely in mid-air without the physical prototype. 
+            The study used a crossover A/B design, meaning that one group experienced PAULA 
+            first and the other version afterwards, while another group experienced the opposite order. 
+            The evaluation included the System Usability Scale (SUS), User Experience Questionnaire (UEQ), 
+            Igroup Presence Questionnaire (IPQ), and qualitative feedback.
+            <br>
+            <img src="ProjectImages\PAULAImgs\TestingImg.png" alt="PAULA" class="projectDesc-content-multipleImg2">
+            <img src="ProjectImages\PAULAImgs\TestingImg_2.png" alt="PAULA" class="projectDesc-content-multipleImg2">
+            <br>
+            The results were particularly interesting when looking at immersion. Nine participants 
+            described PAULA as feeling more immersive than the mid-air version. At the same time, 
+            the physical prototype was not perceived as purely beneficial. Nine participants described it 
+            as both useful and disruptive, while three participants found it exclusively disruptive. I've linked the full documentation of the project below, 
+            which goes into more detail about the whole project including study results and methodology.
+            <br><br>
+            After the project was completed, it was presented to the Cologne Fire Department. The feedback was very positive, and the department expressed its interest in further developing the project. 
+            Right now the project is being continued by a new team of students, and has grown into one of the IREX lab's core research lines. In the future PAULA is expected to receive funding from the
+            Federal Ministry of Education and Research as well as from the European Union and to be developed into a full-scale application used by different fire departments in germany.
+            <br>
+            <img src="ProjectImages\PAULAImgs\TestingImg_3.png" alt="PAULA" class="projectDesc-content-img">
+            <br>
+            If you are interested in learning more about the project, there are a few more resources available below. If you're still curios you can always contact me directly, 
+            and I will be happy to answer any questions you may have!
         </p>
+        <div class="projectResourceBtn-group">
+            <a href="https://github.com/floriankrawinkel/UPAT" target="_blank" class="projectResourceBtns">Github Repository</a>
+            <a href="PDFFiles/PAULADocumentation.pdf" target="_blank" class="projectResourceBtns">Bachelor Thesis (German)</a>
+        </div>
     </div>
 
 </section>

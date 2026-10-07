@@ -42,16 +42,18 @@
             <b>How does integrating a physical object into an MR training simulation influence immersion compared to purely virtual training methods?</b>
             <br><br>
             I worked on the project together with two other students, with my main responsibility being the programming and technical implementation of the Mixed Reality 
-            experience. I worked primarily in Unity and focused on making the different interactions work, connecting the physical and virtual parts of the prototype, and 
+            experience. This was done primarily in Unity and focused on making the different interactions work, connecting the physical and virtual parts of the prototype, and 
             implementing the training flow. Alongside the software development, I also helped construct the physical prototype.
             The relationship between the physical and digital layers becomes equally important.
+            <br>
             <img src="ProjectImages\PAULAImgs\PhysicalFirePump.png" alt="PAULA" class="projectDesc-content-img">
+            <br>
             The project started with the question of how a firefighter could learn the basic operation of a
             fire pump in a simulated environment. The training sequence was broken down into several individual steps, 
             including starting the engine, opening a valve, increasing the pressure to 7 bar, connecting the hose coupling, 
             and switching from tank operation to suction operation. Instead of simply presenting these steps as instructions, t
             he application was designed to guide the user through the process interactively.
-             <br><br>
+            <br><br>
             I implemented much of this interaction logic in Unity. The Meta Quest 3 and the Meta SDK provided the foundation for 
             the Mixed Reality experience, while I worked on connecting the individual interactions to the training sequence. 
             The user was guided through the process using a virtual checklist, and Ghost Hands were later introduced to demonstrate 
@@ -73,76 +75,39 @@
             <img src="ProjectImages\PAULAImgs\PolycamModel.jpg" alt="PAULA" class="projectDesc-content-multipleImg2">
             <img src="ProjectImages\PAULAImgs\Complete3DModel.jpg" alt="PAULA" class="projectDesc-content-multipleImg2">
             <br>
-            Another part of my work was experimenting with how the physical controls could communicate with Unity. For the valve, I worked with an 
-            ESP32 and a rotary encoder to capture the rotation of the physical control and transfer it into the application in real time. The 
-            idea was that turning the real valve would also turn the corresponding virtual valve.
-            Although this interaction was not ultimately used in the final presentation because of an issue during the iteration phase, the 
-            experiment was an important part of the development process. It showed me how quickly an interaction that seems relatively simple
-            from the outside can become more complicated once hardware, communication, Unity, and Mixed Reality all have to work together reliably. 
-            For the final version, the valve interaction therefore used an existing touch-and-grab interaction instead.
-            <br><br>
-            At the same time, I helped build the physical prototype together with the other students. The replica was constructed 
-            from relatively inexpensive materials such as wood, 3D-printed PLA parts, buttons, and electronic components. 
-            The documented material cost was around €54. I was not responsible for creating the 3D models themselves; instead, 
-            my contribution on the physical side was mainly helping with the construction and making sure that the physical components 
-            could support the interactions that I was implementing digitally.
-            <br><br>
-            This was one of the aspects of the project that I found particularly useful. 
-            Programming the interaction and physically building the object gave me a much 
-            better understanding of how closely the two sides were connected. A change in the 
-            physical prototype could affect the interaction in Unity, while a limitation in the 
-            software could require us to reconsider how a physical control was constructed.
-            <br><br>
             During the development process, the prototype was tested at a university iteration exhibition. 
             This was one of the points where the project changed significantly because we were able to see 
             how people interacted with the system without having someone from the development team explain every step.  
-            <br><br> 
-            Some of the problems were related to hand tracking. 
-            Certain hand poses were not recognized as reliably as we had expected, which could
-            interrupt the training sequence. Users were also sometimes unsure which virtual elements were actually 
-            interactive. This made it clear that an interaction can make sense to the person who programmed it 
-            while still being ambiguous to someone encountering the system for the first time.
-            <br><br>
-            These observations led to further iterations. One of the results was 
-            the use of Ghost Hands to demonstrate the intended interactions more clearly. 
-            We also continued working on the relationship between the physical prototype and 
-            the virtual model, since the alignment between the two had a noticeable effect on 
-            how people perceived the experience.
-            <br><br>
-            After the iterative development phase, the physical version of P.A.U.L.A. was compared with a version of the training where the interactions 
+          <br><br>
+            After the iterative development phase, the physical version of PAULA was compared with a version of the training where the interactions 
             were performed entirely in mid-air without the physical prototype. 
-            The study used a crossover A/B design, meaning that one group experienced P.A.U.L.A. 
+            The study used a crossover A/B design, meaning that one group experienced PAULA 
             first and the other version afterwards, while another group experienced the opposite order. 
             The evaluation included the System Usability Scale (SUS), User Experience Questionnaire (UEQ), 
             Igroup Presence Questionnaire (IPQ), and qualitative feedback.
-            <br><br>
+            <br>
+            <img src="ProjectImages\PAULAImgs\TestingImg.png" alt="PAULA" class="projectDesc-content-multipleImg2">
+            <img src="ProjectImages\PAULAImgs\TestingImg_2.png" alt="PAULA" class="projectDesc-content-multipleImg2">
+            <br>
             The results were particularly interesting when looking at immersion. Nine participants 
-            described P.A.U.L.A. as feeling more immersive than the mid-air version. At the same time, 
+            described PAULA as feeling more immersive than the mid-air version. At the same time, 
             the physical prototype was not perceived as purely beneficial. Nine participants described it 
-            as both useful and disruptive, while three participants found it exclusively disruptive.
-            <br><br>
-            For me, this was probably the most interesting result of the project. 
-            Before working on P.A.U.L.A., it was easy to think of physical interaction 
-            as something that would automatically make an MR experience feel more realistic. 
-            The testing showed that this is not necessarily the case. A physical object can 
-            strengthen the experience, but only when the physical and virtual versions correspond closely enough.
-            <br><br>
-            The SUS results showed a similar contrast. P.A.U.L.A. achieved a score of 
-            75.4, while the mid-air version scored 82.0. Both were within an acceptable 
-            usability range, but the mid-air version scored higher on this measure. 
-            The UEQ results showed that both versions performed at least above average 
-            across the measured dimensions. P.A.U.L.A. scored particularly well in stimulation 
-            and originality, while the mid-air version performed better in areas such as transparency, efficiency, and controllability.
-            <br><br>
-            The study also highlighted some limitations. The number of participants was relatively small, 
-            which means that the results cannot simply be generalized to a much larger population. Some of the 
-            IPQ questions also seemed to be difficult for participants to interpret because P.A.U.L.A. deliberately
-            keeps the real environment visible. Unlike fully immersive VR, the user is aware of both the physical room and the virtual content at the same time.
+            as both useful and disruptive, while three participants found it exclusively disruptive. I've linked the full documentation of the project below, 
+            which goes into more detail about the whole project including study results and methodology.
             <br><br>
             After the project was completed, it was presented to the Cologne Fire Department. The feedback was very positive, and the department expressed its interest in further developing the project. 
-            Right now the project is being continued by a new team of students, and has grown into one of the lab's core research lines. In the future PAULA is expected to receive funding from the
+            Right now the project is being continued by a new team of students, and has grown into one of the IREX lab's core research lines. In the future PAULA is expected to receive funding from the
             Federal Ministry of Education and Research as well as from the European Union and to be developed into a full-scale application used by different fire departments in germany.
+            <br>
+            <img src="ProjectImages\PAULAImgs\TestingImg_3.png" alt="PAULA" class="projectDesc-content-img">
+            <br>
+            If you are interested in learning more about the project, there are a few more resources available below. If you're still curios you can always contact me directly, 
+            and I will be happy to answer any questions you may have!
         </p>
+        <div class="projectResourceBtn-group">
+            <a href="https://irex.team/project-launch-mixed-reality-fire-pump-training/" target="_blank" class="projectResourceBtns">IREX Lab Website</a>
+            <a href="PDFFiles/PAULADocumentation.pdf" target="_blank" class="projectResourceBtns">German Project Documentation</a>
+        </div>
     </div>
 
 </section>
