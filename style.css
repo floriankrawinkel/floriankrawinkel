@@ -468,8 +468,17 @@ span{
     .home-img img{
         width: 56vw;
     }
+}
 
-    @media (max-width: 480px) {    
+@media (max-width: 480px) {
+    .home-img {
+            display: flex;    
+            align-items: center;    
+            justify-content: center;    
+            gap: 2rem;    
+            flex-wrap: wrap;    
+            flex-direction: column-reverse;
+    }
     .home-content h1 {        
         font-size: 2.5rem;    
     }
@@ -492,6 +501,5 @@ span{
     .btn-group a {        
         width: 100%;        
         text-align: center;    
-    }
     }
 }

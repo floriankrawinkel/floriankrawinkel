@@ -71,27 +71,45 @@ body{
     font-size: 1.8rem;
     line-height: 1.6;
     max-width: 100%;
-    margin-bottom: 2rem;
+
 }
-.projectDesc-content-img{
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    width: 65%;
-    height: auto;
-    object-fit: cover;
+.projectDesc-content-img {    
+    margin: 1rem 0rem 1rem;
+    width: 65%;    
+    height: auto;    
+    object-fit: cover;    
+    border-radius: 1px;    
+    margin-left: auto;    
+    margin-right: auto;    
+    display: block;
+}
+.projectDesc-content-multipleImg3 {    
+    margin: 1rem 0rem 1rem;    
+    display: flex;    
+    flex-direction: row;  
+    justify-content: space-between;    
+    width: 100%;    
+    height: auto;      
+    flex-wrap: wrap; 
+}
+.projectDesc-content-multipleImg3 img {    
+    width: auto;
+    max-width: 33%;   
+    height: auto;    
+    max-height: 40vh;    
+    object-fit: cover;    
     border-radius: 1px;
-    margin-left: 25rem;
 }
-.projectDesc-content-multipleImg3{
-    margin: 2rem 0rem 1rem;
-    width: 33%;
-    height: auto;
-    max-height: 25vh;
-    object-fit: cover;
-    border-radius: 1px;
+.projectDesc-content-multipleImg2 {
+    margin: 1rem 0rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
-.projectDesc-content-multipleImg2{
-    margin: 2rem 0rem 1rem;
+.projectDesc-content-multipleImg2 img {
     width: 49%;
     height: 50vh;
     object-fit: cover;
@@ -99,6 +117,7 @@ body{
 }
 .projectResourceBtns{
     display: inline-block;
+    margin-top: 4rem;
     padding: 1rem 2.8rem;
     border-radius: 4rem;
     font-size: 1.6rem;
@@ -142,7 +161,7 @@ body{
 }
 section{
     min-height: 100vh;
-    padding: 7rem 12% 10rem;
+    padding: 7rem 12% 4rem;
 }
 .footer{
     position: relative;
@@ -232,22 +251,13 @@ section{
         margin: 3rem 0;
         color: white;
     }
-    .home{
-        flex-direction: column-reverse;
-        margin:  5rem 4rem;
-    }
-    .home-content h3{
-        font-size: 2.6rem;
-    }
-    .home-content h1{
-        font-size: 8rem;
-        margin-top: 3rem;
-    }
-    .home-content p{
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    .home-img img{
-        width: 56vw;
+}
+/* Stack vertically on mobile */
+@media (max-width: 768px) {
+    .projectDesc-content-multipleImg2 img {
+        width: 100%;
     }
 }
+/* Stack vertically on mobile */@media (max-width: 768px) {    .projectDesc-content-multipleImg3 img {        max-width: 100%;    }}
+/* Tablet & larger screens */@media (min-width: 768px) {    .projectDesc-content-img {        width: 65%;        margin-left: 25rem;        margin-right: 0;    }}
+/* Mobile */@media (max-width: 767px) {    .projectDesc-content-img {        width: 90%;        margin-left: auto;        margin-right: auto;    }}
