@@ -1,130 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Florian's Website Portfolio</title>
+    <title>Florian Krawinkel | XR & Unity Developer Portfolio</title>
+    <meta name="description" content="Florian Krawinkel's portfolio. I'm a XR and Unity developer showcasing my projects including Fruit Quest, UPAT, and PAULA. 
+    I'm a recent graduate from TH Cologne.">
+    <meta property="og:title" content="Florian Krawinkel | XR & Unity Developer">
+    <meta property="og:description" content="Portfolio showcasing XR and Unity projects including UPAT VR training for medical staff and PAULA XR training for firefighters.">
+    <meta property="og:image" content="https://floriankrawinkel.github.io/floriankrawinkel/PictureOfMe.jpg">
     <link href="styleProjectSite.css" rel="stylesheet" type="text/css">
     <link href="ProjectImages/FKLogo.png" rel="icon" type="image/png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
-    <a href="index.html" class="logo">
-        Florian <span>Krawinkel</span>
-    </a>
+        <a href="index.html" class="logo">
+            Florian <span>Krawinkel</span>
+        </a>
 
-    <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-menu' id="menu-icon"></i>
 
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#funstuff">Fun Stuff</a>
-        <a href="index.html#contact">Contact</a>
-    </nav>
-</header>
-<section class="projectDesc" id="projectDesc">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#funstuff">Fun Stuff</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="projectDesc" id="projectDesc">
 
-    <div class="project-img-top">
-        <img src="ProjectImages/UPAT_1.png" alt="UPAT">
-    </div>
-    <div class="projectDesc-content">
-        <h1>UPAT</h1>
-        <h2>Mixed Reality · Unity · Meta Quest 3 · C# · Pico XR SDK · Eye Tracking · Medical Education · Research Applications</h2>
-        <p>
-            UPAT (Unseen Patient Attention Training) is a VR attention training program 
-            for doctors and medical staff that I created for my bachelor's thesis. 
-            It's designed to facilitate research studies and is currently being used by 
-            researchers at Technische Hochschule Köln to investigate the potential effects of Visual Delegates in XR trainings.
-            <br><br>
-            After finishing my work on PAULA I wanted to continue working on XR projects, but I also wanted to try something new. So for my bahcelor's thesis I decided to focus on a topic 
-            that is different from my previous work, while keeping the focus on creating XR-trainings for emergency responders. In consultation with my advisor and the IREX lab I decided to work
-            on an attention training for medical staff, which fitted one of the research lines of the lab. Therefore the goal of the project was to create a VR training that uses the Eye Tracking of the 
-            Pico 3 Neo Pro Eye VR headset to track the user's gaze and provide feedback on their attention. The training was also designed to be used in research studies, so researchers can modify UPAT
-            in a way that fits their research questions. The training is currently being used in a research study to investigate the effects of Visual Delegates on attention in VR trainings at the IREX Lab.
-            <br><br>
-            The title of my bachelor's thesis was: 
-            <br><br>
-            <b>Design, Implementation, and Evaluation of a VR-Based Attention Training Program for Research Using Agile Development Methods</b>
-            <br><br>
-            I worked on the project together with two other students, with my main responsibility being the programming and technical implementation of the Mixed Reality 
-            experience. This was done primarily in Unity and focused on making the different interactions work, connecting the physical and virtual parts of the prototype, and 
-            implementing the training flow. Alongside the software development, I also helped construct the physical prototype.
-            The relationship between the physical and digital layers becomes equally important.
-            <br>
-            <img src="ProjectImages\PAULAImgs\PhysicalFirePump.png" alt="PAULA" class="projectDesc-content-img">
-            <br>
-            The project started with the question of how a firefighter could learn the basic operation of a
-            fire pump in a simulated environment. The training sequence was broken down into several individual steps, 
-            including starting the engine, opening a valve, increasing the pressure to 7 bar, connecting the hose coupling, 
-            and switching from tank operation to suction operation. Instead of simply presenting these steps as instructions, t
-            he application was designed to guide the user through the process interactively.
-            <br><br>
-            I implemented much of this interaction logic in Unity. The Meta Quest 3 and the Meta SDK provided the foundation for 
-            the Mixed Reality experience, while I worked on connecting the individual interactions to the training sequence. 
-            The user was guided through the process using a virtual checklist, and Ghost Hands were later introduced to demonstrate 
-            the intended hand positions and make the interactions easier to understand.
-            <br>
-            <img src="ProjectImages\PAULAImgs\Checklist.png" alt="PAULA" class="projectDesc-content-multipleImg3">
-            <img src="ProjectImages\PAULAImgs\LeverGhostHand.png" alt="PAULA" class="projectDesc-content-multipleImg3">
-            <img src="ProjectImages\PAULAImgs\ModelWithGhostHands.png" alt="PAULA" class="projectDesc-content-multipleImg3">
-            <br>
-            One of the more difficult parts of the project was making the virtual pump line up correctly with the physical prototype. 
-            The entire concept depends on the user perceiving the physical and virtual pump as one object. If the virtual valve appears 
-            a few centimeters away from the physical valve, for example, the user immediately notices the discrepancy when reaching for it. 
-            To deal with this, I worked with the Spatial Anchor system to position the virtual pump relative to the physical prototype.
-            <br><br>
-            This turned out to be much more important than I initially expected. Spatial alignment is easy to overlook when looking at the 
-            system from a purely technical perspective, but from the user's point of view it directly affects whether the interaction feels 
-            believable. The closer the physical and virtual objects were aligned, the less the user had to think about the technology itself.
-            <br>
-            <img src="ProjectImages\PAULAImgs\PolycamModel.jpg" alt="PAULA" class="projectDesc-content-multipleImg2">
-            <img src="ProjectImages\PAULAImgs\Complete3DModel.jpg" alt="PAULA" class="projectDesc-content-multipleImg2">
-            <br>
-            During the development process, the prototype was tested at a university iteration exhibition. 
-            This was one of the points where the project changed significantly because we were able to see 
-            how people interacted with the system without having someone from the development team explain every step.  
-          <br><br>
-            After the iterative development phase, the physical version of PAULA was compared with a version of the training where the interactions 
-            were performed entirely in mid-air without the physical prototype. 
-            The study used a crossover A/B design, meaning that one group experienced PAULA 
-            first and the other version afterwards, while another group experienced the opposite order. 
-            The evaluation included the System Usability Scale (SUS), User Experience Questionnaire (UEQ), 
-            Igroup Presence Questionnaire (IPQ), and qualitative feedback.
-            <br>
-            <img src="ProjectImages\PAULAImgs\TestingImg.png" alt="PAULA" class="projectDesc-content-multipleImg2">
-            <img src="ProjectImages\PAULAImgs\TestingImg_2.png" alt="PAULA" class="projectDesc-content-multipleImg2">
-            <br>
-            The results were particularly interesting when looking at immersion. Nine participants 
-            described PAULA as feeling more immersive than the mid-air version. At the same time, 
-            the physical prototype was not perceived as purely beneficial. Nine participants described it 
-            as both useful and disruptive, while three participants found it exclusively disruptive. I've linked the full documentation of the project below, 
-            which goes into more detail about the whole project including study results and methodology.
-            <br><br>
-            After the project was completed, it was presented to the Cologne Fire Department. The feedback was very positive, and the department expressed its interest in further developing the project. 
-            Right now the project is being continued by a new team of students, and has grown into one of the IREX lab's core research lines. In the future PAULA is expected to receive funding from the
-            Federal Ministry of Education and Research as well as from the European Union and to be developed into a full-scale application used by different fire departments in germany.
-            <br>
-            <img src="ProjectImages\PAULAImgs\TestingImg_3.png" alt="PAULA" class="projectDesc-content-img">
-            <br>
-            If you are interested in learning more about the project, there are a few more resources available below. If you're still curios you can always contact me directly, 
-            and I will be happy to answer any questions you may have!
-        </p>
-        <div class="projectResourceBtn-group">
-            <a href="https://github.com/floriankrawinkel/UPAT" target="_blank" class="projectResourceBtns">Github Repository</a>
-            <a href="PDFFiles/PAULADocumentation.pdf" target="_blank" class="projectResourceBtns">Bachelor Thesis (German)</a>
+        <div class="project-img-top">
+            <img src="ProjectImages/UPAT_1.png" alt="UPAT">
         </div>
-    </div>
+        <div class="projectDesc-content">
+            <h1>UPAT</h1>
+            <h2>Mixed Reality · Unity · Meta Quest 3 · C# · Pico XR SDK · Eye Tracking · Medical Education · Research
+                Applications</h2>
+            <p>UPAT (Unseen Patient Attention Training) is a VR attention training program
+                for doctors and medical staff that I created for my bachelor's thesis.
+                It's designed to facilitate research studies and is currently being used by
+                researchers at Technische Hochschule Köln to investigate the potential effects of Visual Delegates in XR
+                trainings.
+                <br><br>
+                After finishing my work on PAULA I wanted to continue working on XR projects, but I also wanted to try
+                something new. So for my bachelor's thesis I decided to focus on a topic
+                that is different from my previous work, while keeping the focus on creating XR-trainings for emergency
+                responders. In consultation with my advisor and the IREX lab I decided to work
+                on an attention training for medical staff, which fitted one of the research lines of the lab. Therefore
+                the goal of the project was to create a VR training that uses the Eye Tracking of the
+                Pico 3 Neo Pro Eye VR headset to track the user's gaze and provide feedback on their attention. The
+                training was also designed to be used in research studies, so researchers can modify UPAT
+                in a way that fits their research questions. The training is currently being used in a research study to
+                investigate the effects of Visual Delegates on attention in VR trainings at the IREX Lab.
+                <br><br>
+                The title of my bachelor's thesis was:
+                <br><br>
+                <b>Design, Implementation, and Evaluation of a VR-Based Attention Training Program for Research Using
+                    Agile Development Methods</b>
+                <br><br>
+            <p>
+                Before starting the implementation, I first investigated the existing research surrounding VR training
+                simulations, attention training, eye-tracking, and a concept called Visual Delegates. I also analysed
+                several comparable applications, including VERA, Wildcard, and Dimensional Search, to identify useful
+                design decisions and technical approaches that could be applied to UPAT.
+                <br><br>
+                One important finding was that VR provides opportunities to study behaviour in immersive environments
+                while maintaining control over the experimental conditions. Eye-tracking was particularly relevant
+                because it allows the application to determine where a participant is looking and how long their
+                attention remains focused on a particular target. This makes it possible to measure attention-related
+                behaviour more directly than would be possible with interaction methods based only on button presses or
+                head movements.
+                <br><br>
+                Another important part of the research was the analysis of Visual Delegates. These are visual effects
+                used to communicate information that would otherwise be difficult or impossible to experience directly.
+                They are commonly found in video games, where they can represent physical sensations or emotional
+                states. For UPAT, I explored how the same concept could be applied to attention: instead of only
+                recording that a user has stopped looking at the virtual patient, the application could also communicate
+                this loss of attention through changes in the virtual environment.
+            </p>
 
-</section>
-<footer class="footer">
-    <div class="social">
-        <a href="https://www.linkedin.com/in/florian-krawinkel-320952175/"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://github.com/floriankrawinkel"><i class='bx bxl-github'></i></a>
-    </div>
-    <p class="copyright">
-        © Florian Krawinkel | All Rights Reserved
-    </p>
-</footer>
+            <div class="projectDesc-content-multipleImg2">
+                <img src="ProjectImages/UPATImgs/VirtualPatient.png"
+                    alt="UPAT virtual patient and training environment">
+                <img src="ProjectImages/UPATImgs/AttentionTraining.png"
+                    alt="Eye-tracking based attention training in UPAT">
+            </div>
+
+            <p>
+                The basic training scenario is intentionally straightforward. The participant enters a virtual medical
+                environment and is asked to maintain their visual attention on the virtual patient. The underlying
+                prototype uses a PICO Neo 3 Pro Eye headset with integrated eye-tracking, allowing the application to
+                use the participant's gaze as the primary input for the training itself.
+                <br><br>
+                When the participant stops looking at the virtual patient for longer than a configurable period, the
+                application interprets this as a loss of attention and activates the selected Visual Delegates. These
+                effects provide immediate visual feedback, making the consequences of looking away noticeable to the
+                participant. Once the participant redirects their attention towards the patient, the effects can
+                gradually fade out again.
+                <br><br>
+                The initial implementation included three different Visual Delegates: a vignette effect, a film-grain
+                effect, and a grey filter. These modify the appearance of the user's field of view in different ways.
+                The vignette darkens the edges of the view, the film-grain effect introduces a grainy visual appearance,
+                and the grey filter reduces the colour intensity of the environment. Each effect can be configured
+                independently, and multiple effects can be combined within a single training condition.
+                <br><br>
+                An important part of the project was making these effects configurable instead of treating them as fixed
+                elements of the application. This allows researchers to investigate different combinations of visual
+                feedback and, in future studies, compare how different types of Visual Delegates influence attention and
+                user behaviour.
+            </p>
+
+            <div class="projectDesc-content-multipleImg3">
+                <img src="ProjectImages/UPATImgs/Vignette.png" alt="Vignette Visual Delegate">
+                <img src="ProjectImages/UPATImgs/FilmGrain.png" alt="Film-grain Visual Delegate">
+                <img src="ProjectImages/UPATImgs/GreyFilter.png" alt="Grey-filter Visual Delegate">
+            </div>
+
+            <p>
+                One of the main technical challenges was that the original prototype had been built primarily to
+                demonstrate the training concept, rather than to support long-term extensibility. Each Visual Delegate
+                had its own implementation and logic for controlling the corresponding effect. Adding new effects or
+                changing existing behaviour could therefore require additional code and lead to duplicated
+                functionality.
+                <br><br>
+                To address this, I redesigned the Visual Delegate system around a modular software architecture in
+                Unity. I introduced a shared base class that defines the common properties and functionality of every
+                Visual Delegate, including its name, classification, and configurable parameters. On top of this, I
+                implemented specialised subclasses for different types of effects, allowing shared functionality to be
+                reused while keeping the implementation of each specific effect separate.
+                <br><br>
+                Unity Scriptable Objects played an important role in this approach. They allow individual Visual
+                Delegates to be created and configured directly in the Unity Editor, without requiring a separate script
+                or changes to existing code for every new instance. Researchers can adjust the parameters of an effect
+                through the Inspector and create new configurations using the existing architecture.
+                <br><br>
+                I also implemented a Visual Delegate Manager that coordinates the active effects and controls how their
+                parameters change over time. This includes handling the fade-in and fade-out behaviour when an effect is
+                activated or deactivated. By separating the definition of an effect from the logic that manages it
+                during the training, the architecture became easier to maintain and extend.
+            </p>
+
+            <div class="projectDesc-content-multipleImg3">
+                <img src="ProjectImages/UPATImgs/VisualDelegateScriptableObject.png"
+                    alt="Configurable Visual Delegate in the Unity Editor">
+                <img src="ProjectImages/UPATImgs/VisualDelegateManager.png" alt="Visual Delegate Manager architecture">
+                <img src="ProjectImages/UPATImgs/VisualDelegateCollection.png" alt="Collection of Visual Delegates">
+            </div>
+
+            <p>
+                In addition to individual Visual Delegates, I implemented a system for grouping multiple effects into
+                Visual Delegate Collections. Each collection contains a predefined combination of effects that can be
+                selected as a single configuration. This is particularly useful in a research context, where different
+                experimental conditions may require different combinations of Visual Delegates.
+                <br><br>
+                Instead of manually selecting and configuring every effect before each training session, researchers can
+                prepare collections in advance and select the appropriate configuration when starting the application.
+                The available collections are loaded automatically and displayed in the user interface. This also makes
+                it easier to introduce new experimental conditions in the future without having to modify the underlying
+                training logic.
+                <br><br>
+                Designing this architecture required more than simply making the code reusable. The goal was to make the
+                application accessible to researchers who might want to conduct experiments with it but would not
+                necessarily want to modify the source code themselves. For that reason, configurability and a clear
+                separation of responsibilities were central considerations throughout the implementation.
+            </p>
+
+            <p>
+                Another major part of the thesis was the development of a start menu that allows the training to be
+                configured directly within the application. Previously, changing training conditions required more
+                involvement in the development environment. With the new menu, researchers can select a Visual Delegate
+                Collection, inspect the effects it contains, and adjust important training parameters before starting a
+                session.
+                <br><br>
+                These parameters include the time the virtual patient can be ignored before the effects are activated,
+                as well as the fade-in and fade-out durations of the selected Visual Delegates. The menu also allows a
+                participant ID, the training duration, and the type of training run to be specified. Changes made
+                through the interface are passed to the corresponding systems and used during the training.
+                <br><br>
+                This was an important improvement because it made the application more practical for repeated
+                experiments. Researchers can prepare different conditions and switch between them without having to
+                change values manually in the code or rebuild the training logic for each configuration.
+            </p>
+
+            <div class="projectDesc-content-multipleImg2">
+                <img src="ProjectImages/UPATImgs/StartMenu.png" alt="UPAT start menu">
+                <img src="ProjectImages/UPATImgs/TrainingSettings.png" alt="UPAT training parameter settings">
+            </div>
+
+            <p>
+                Since the application was being prepared specifically for research, collecting reliable and structured
+                data was another essential requirement. To support this, I implemented a Research Data Collector script that
+                automatically records relevant events during a training session and stores them in CSV files.
+                <br><br>
+                The research data collector script records events such as losses of focus and subsequent refocusing, together with timestamps
+                and the parameters used for the training. This information can later be processed and analysed to
+                investigate how participants direct their attention towards the virtual patient and how their behaviour
+                changes under different training conditions. The participant ID also makes it possible to associate the
+                generated data with the corresponding study participant.
+                <br><br>
+                I also implemented a dedicated training timer that controls the duration of each session and provides
+                elapsed-time information to other components. By combining the timer with the data collector,
+                attention-related events can be associated with a time during the training, rather than being recorded
+                as isolated observations.
+                <br><br>
+                Together, these features establish the foundation for systematic data collection. Instead of relying on
+                manual observations or requiring a separate logging implementation for every experiment, researchers can
+                use the same data collection system across different configurations. This is especially important when
+                comparing multiple experimental conditions or analysing attention-related behaviour over time.
+            </p>
+
+            <div class="projectDesc-content-multipleImg3">
+                <img src="ProjectImages/UPATImgs/ResearchDataCollector.png"
+                    alt="Research Data Collector implementation">
+                <img src="ProjectImages/UPATImgs/CSVOutput.png" alt="Example of collected attention data in CSV format">
+                <img src="ProjectImages/UPATImgs/UnityScene.png" alt="Structured UPAT training scene in Unity">
+            </div>
+
+            <p>
+                Besides the individual features, I also reorganised the overall Unity project and training scene. The
+                different systems, including the Visual Delegate Manager, Research Data Collector, timer, and
+                interaction components, were organised into clearly separated objects and responsibilities. The project
+                and folder structure were also designed to make relevant components easier to locate and modify.
+                <br><br>
+                This might seem like a relatively small detail, but it is particularly important for a research
+                application. The software should not only work for its original developer; it should also be
+                understandable and extensible by other people who may use it for their own studies. By keeping the scene
+                structure organised and reducing the amount of configuration required to get started, I aimed to make it
+                easier for future researchers to use and extend the application.
+                <br><br>
+                Throughout the development process, I followed agile development methods and incorporated feedback from
+                a researcher who represented one of the intended user groups. This helped me refine the application
+                concept and implementation around the practical requirements of scientific experiments, rather than
+                focusing exclusively on technical functionality.
+            </p>
+
+            <p>
+                A further consideration was the balance between experimental control and realism. The application uses a
+                relatively static interaction scenario in which the participant remains seated and does not need to move
+                around the virtual environment. This helps keep the training conditions controlled and avoids
+                unnecessary movement that could contribute to simulator sickness. The primary training interaction is
+                based on eye-tracking, while controllers are used to navigate the menus.
+                <br><br>
+                However, the design also has limitations. The virtual patient does not yet respond naturally to the
+                participant through facial expressions, body language, or its own gaze behaviour. Instead, feedback is
+                provided mainly through the Visual Delegates. While this makes the feedback predictable and easy to
+                configure for experiments, it also means that the interaction is less natural than a real conversation.
+                The training currently focuses primarily on sustained attention towards the patient, while more complex
+                tasks involving distractions or switching attention between different targets have not yet been fully
+                implemented.
+                <br><br>
+                These limitations were important to acknowledge because the goal of the thesis was to create a technical
+                foundation for research, rather than to claim that the training was already effective. Although the
+                existing literature provides reasons to investigate VR-based attention training, those findings cannot
+                automatically be transferred to UPAT. Whether the application improves attention, how users perceive its
+                feedback, and whether any improvements translate into real doctor–patient interactions still need to be
+                investigated through empirical studies.
+            </p>
+
+            <p>
+                Overall, the main result of my bachelor’s thesis was the transformation of an initial VR prototype into
+                a more modular, configurable, and research-oriented application. The new Visual Delegate architecture
+                makes it easier to add and compare visual effects, the start menu allows experimental parameters to be
+                changed directly, and the automated data collection system provides a consistent way to record
+                attention-related events during training. This lead to an application designed to conduct studies with and most importantly 
+                one that researchers can easily modify to match their study requirements. 
+                <br><br>
+                The next steps would be to conduct controlled studies to evaluate the application's usability and
+                investigate whether the training has a measurable effect on attention. Future development could also
+                introduce more realistic virtual patient behaviour, additional Visual Delegates, and training tasks
+                involving controlled distractions. These extensions would allow researchers to explore a wider range of
+                attention-related behaviours and investigate the role of different feedback strategies.
+                <br><br>
+                The project therefore represents a starting point for further research into VR-based attention training
+                in the medical context. By making the application easier to configure, extend, and use for data
+                collection, the thesis establishes a foundation on which future studies can build. Right now UPAT is being used by researchers 
+                at the TH Cologne to conduct studies on the effects of visual delegates in XR-Trainings and to complete a doctoral dissertation. 
+                <br><br>
+                The full source code of the project is available below, as well as my complete bachelor’s thesis which contains
+                further details about the research background, software architecture, implementation, and potential
+                directions for future work.
+            </p>
+
+            </p>
+            <div class="projectResourceBtn-group">
+                <a href="https://github.com/floriankrawinkel/UPAT" target="_blank" class="projectResourceBtns">Github
+                    Repository</a>
+                <a href="PDFFiles/FlorianKrawinkelBachelorarbeit.pdf" target="_blank" class="projectResourceBtns">Bachelor Thesis
+                    (German)</a>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/florian-krawinkel-320952175/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/floriankrawinkel"><i class='bx bxl-github'></i></a>
+        </div>
+        <p class="copyright">
+            © Florian Krawinkel | All Rights Reserved
+        </p>
+    </footer>
 </body>
+
 </html>
