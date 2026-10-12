@@ -65,9 +65,11 @@ form.addEventListener("submit", async function (event) {
     submitButton.value = "Send Message";
 });
 
-function playRandomSound() { 
-    const sounds = ['AudioClips/sound1.wav','AudioClips/sound2.wav','AudioClips/sound3.wav'];
-    const randomIndex = Math.floor(Math.random() * sounds.length);  
-    const selectedSound = sounds[randomIndex];
-    const audio = new Audio(selectedSound);  audio.play();
+let currentSoundIndex = 0;
+const sounds = ['AudioClips/sound1.wav','AudioClips/sound2.wav','AudioClips/sound3.wav'];
+
+function playSound() {
+    const audio = new Audio(sounds[currentSoundIndex]);
+    audio.play();
+    currentSoundIndex = (currentSoundIndex + 1) % sounds.length;
 }

@@ -128,7 +128,7 @@ section {
 }
 
 /* ===== SINGLE IMAGE ===== */
-.projectDesc-content-img {
+.projectDesc-content-img img {
     margin: 2rem auto;
     width: 65%;
     height: auto;
