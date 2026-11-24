@@ -9,6 +9,11 @@
     font-family: "Roboto", sans-serif;
 }
 
+:focus-visible {
+    outline: 2px solid var(--main-color);
+    outline-offset: 4px;
+}
+
 :root {
     --bg-color: #080808;
     --second-bg-color: #131313;
@@ -32,12 +37,12 @@ body {
     left: 0;
     width: 100%;
     padding: 1rem 12% 1rem;
-    background-color: rgba(var(--bg-color), 0.1);
+    background-color: rgba(8, 8, 8, 0.6);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .logo {
@@ -250,7 +255,7 @@ span {
         content: "Unity-Developer";
     }
     61%, 80% {
-        content: "VR-Specalist";
+        content: "VR-Specialist";
     }
     81%, 100% {
         content: "Game Designer";
@@ -527,7 +532,7 @@ span {
         display: none;
     }
     
-    .navbar .active {
+    .navbar.active {
         display: block;
     }
     
@@ -590,7 +595,7 @@ span {
     }
     
     .project-item p {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     
     .social-icons a {
@@ -633,7 +638,7 @@ span {
 /* ===== 480PX BREAKPOINT (Small Mobile) ===== */
 @media (max-width: 480px) {
     html {
-        font-size: 45%;
+        font-size: 55%;
     }
     
     .header {
@@ -641,7 +646,7 @@ span {
     }
     
     .logo {
-        font-size: 1.8rem;
+        font-size: 2.4rem;
     }
     
     section {
@@ -670,12 +675,12 @@ span {
     }
     
     .home-content h1 {
-        font-size: 2.5rem;
+        font-size: 4rem;
         margin-top: 0.5rem;
     }
     
     .home-content p {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         line-height: 1.6;
         max-width: 100%;
     }
@@ -686,7 +691,7 @@ span {
     }
     
     .text-animation {
-        font-size: 1.5rem;
+        font-size: 2.2rem;
         min-width: auto;
     }
     
@@ -720,7 +725,7 @@ span {
     }
     
     .heading {
-        font-size: 2rem;
+        font-size: 3.5rem;
         margin-bottom: 2rem;
     }
     
@@ -737,12 +742,12 @@ span {
     }
     
     .project-item h2 {
-        font-size: 1.5rem;
+        font-size: 2.2rem;
         margin: 0.5rem 0;
     }
     
     .project-item p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 1.6;
     }
     
@@ -761,7 +766,7 @@ span {
     .contact form .input-box input,
     .contact form textarea {
         padding: 1.5rem;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
     
     .contact form .btn {

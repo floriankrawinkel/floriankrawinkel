@@ -9,6 +9,11 @@
     font-family: "Roboto", sans-serif;
 }
 
+:focus-visible {
+    outline: 2px solid var(--main-color);
+    outline-offset: 4px;
+}
+
 :root {
     --bg-color: #080808;
     --second-bg-color: #131313;
@@ -348,7 +353,7 @@ section {
 /* Mobile: 768px and below */
 @media (max-width: 768px) {
     html {
-        font-size: 50%;
+        font-size: 60%;
     }
 
     .header {
@@ -459,7 +464,7 @@ section {
 /* Small Mobile: 480px and below */
 @media (max-width: 480px) {
     html {
-        font-size: 45%;
+        font-size: 55%;
     }
 
     .header {
@@ -476,18 +481,18 @@ section {
     }
 
     .projectDesc-content h1 {
-        font-size: 2.2rem;
+        font-size: 3rem;
         margin-top: 1rem;
         margin-bottom: 0.8rem;
     }
 
     .projectDesc-content h2 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         margin-bottom: 1.2rem;
     }
 
     .projectDesc-content p {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         line-height: 1.6;
     }
 
@@ -497,12 +502,12 @@ section {
     }
 
     .projectResourceBtns {
-        padding: 0.8rem 1.2rem;
-        font-size: 1.1rem;
+        padding: 1rem 1.2rem;
+        font-size: 1.5rem;
     }
 
     .logo {
-        font-size: 1.5rem;
+        font-size: 2.2rem;
     }
 
     .footer .social a {

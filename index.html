@@ -2,24 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Florian Krawinkel | XR & Unity Developer Portfolio</title>
-    <meta name="description" content="Florian Krawinkel's portfolio. I'm a XR and Unity developer showcasing my projects including Fruit Quest, UPAT, and PAULA. 
-    I'm a recent graduate from TH Cologne.">
-    <meta property="og:title" content="Florian Krawinkel | XR & Unity Developer">
-    <meta property="og:description" content="Portfolio showcasing XR and Unity projects including UPAT VR training for medical staff and PAULA XR training for firefighters.">
+    <meta name="description" content="Portfolio of Florian Krawinkel, XR and Unity developer and TH Cologne graduate. Projects include UPAT, a VR attention training for medical staff, and PAULA, an XR training for firefighters.">
+    <link rel="canonical" href="https://floriankrawinkel.github.io/floriankrawinkel/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://floriankrawinkel.github.io/floriankrawinkel/">
+    <meta property="og:title" content="Florian Krawinkel | XR & Unity Developer Portfolio">
+    <meta property="og:description" content="Portfolio of Florian Krawinkel, XR and Unity developer and TH Cologne graduate. Projects include UPAT, a VR attention training for medical staff, and PAULA, an XR training for firefighters.">
     <meta property="og:image" content="https://floriankrawinkel.github.io/floriankrawinkel/PictureOfMe.jpg">
+    <meta name="twitter:card" content="summary_large_image">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="ProjectImages/FKLogo.png" rel="icon" type="image/png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="917663fc-8a3b-41f3-8b11-d8d0f57069a5"></script>
 </head>
+<body>
 <header class="header">
     <a href="#home" class="logo">
         Florian <span>Krawinkel</span>
     </a>
 
-    <i class='bx bx-menu' id="menu-icon"></i>
+    <i class='bx bx-menu' id="menu-icon" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false"></i>
 
     <nav class="navbar">
         <a href="#home" class="active">Home</a>
@@ -28,7 +33,6 @@
         <a href="#contact">Contact</a>
     </nav>
 </header>
-<body>
 <section class="home" id="home">
     <div class="home-content">
         <h1>Hi, I'm <span>Florian</span></h1>
@@ -44,8 +48,8 @@
         </p>
 
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/florian-krawinkel-320952175/"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/floriankrawinkel"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/florian-krawinkel-320952175/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/floriankrawinkel" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
         </div>
 
         <div class="btn-group">
@@ -55,7 +59,7 @@
     </div>
 
     <div class="home-img">
-        <img src="PictureOfMe.jpg" alt="Picture of Me">
+        <img src="PictureOfMe.jpg" alt="Portrait of Florian Krawinkel">
     </div>
 </section>
 
@@ -66,7 +70,7 @@
         <div class="wrapper">
             <div class="project-item">
                 <a href="fruitquest.html">
-                <img src="ProjectImages/FruitQuest_1.png" alt="">
+                <img loading="lazy" decoding="async" src="ProjectImages/FruitQuest_1.jpg" alt="Fruit Quest game screenshot">
                 <h2>Fruit Quest (WIP)</h2>
                 <p>Teaching children about the importance of a healthy diet is essential for their future. 
                     This serious game for elementary school students aims to do this through gamification—not 
@@ -79,7 +83,7 @@
 
             <div class="project-item">
                 <a href="upat.html">
-                <img src="ProjectImages/UPAT_1.png" alt="">
+                <img loading="lazy" decoding="async" src="ProjectImages/UPAT_1.jpg" alt="UPAT virtual training environment">
                 <h2>UPAT</h2>
                 <p>UPAT (Unseen Patient Attention Training) is a VR attention training program 
                     for doctors and medical staff that I created for my bachelor's thesis. 
@@ -92,7 +96,7 @@
 
             <div class="project-item">
                 <a href="paula.html">
-                <img src="ProjectImages/Paula_1.jpg" alt="">
+                <img loading="lazy" decoding="async" src="ProjectImages/Paula_1.jpg" alt="PAULA mixed reality fire pump training">
                 <h2>PAULA</h2>
                 <p> PAULA stands for Pump Action User Learning Application and is an immersive XR training program for firefighters, 
                     developed in collaboration with the Cologne Fire Department. It allows trainees to practice pump operations without 
@@ -112,7 +116,7 @@
         <div class="wrapper">
             <div class="project-item">
                 <a href="https://krabby21.itch.io/microwave-minigame">
-                <img src="ProjectImages/MicrowaveMinigames_1.png" alt="">
+                <img loading="lazy" decoding="async" src="ProjectImages/MicrowaveMinigames_1.jpg" alt="Microwave Minigames screenshot">
                 <h2>Microwave Minigames</h2>
                 <p>Microwave Minigames was created as a submission for the GMTK Game Jam 2026. 
                     Based on the theme of "Countdown," me and a close friend developed a Wario Ware–style game 
@@ -120,13 +124,13 @@
                 </a>
             </div>
             <div class="project-item">
-                <button onclick="playSound()">
-                <img src="ProjectImages/SoundDesign_1.png" alt="">
+                <a href="#funstuff" role="button" aria-label="Play a random sound I designed" onclick="playSound(); return false;">
+                <img loading="lazy" decoding="async" src="ProjectImages/SoundDesign_1.jpg" alt="Synthesizer used for sound design">
                 <h2>Sound Design</h2>
                 <p>Another hobby of mine is sound design especially for games, like microwave minigames and electronic music. Most of my sound design work
                     is done with Vital or the Synthmaster-Series in FL Studio. But I also enjoy experimenting with retro hardware synthesizers like the Roland D-10.
                     <br> <br>Clicking here will play a random sound I designed.</p>
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -195,8 +199,8 @@
 
 <footer class="footer">
     <div class="social">
-        <a href="https://www.linkedin.com/in/florian-krawinkel-320952175/"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://github.com/floriankrawinkel"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/florian-krawinkel-320952175/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/floriankrawinkel" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
     </div>
     <p class="copyright">
         © Florian Krawinkel | All Rights Reserved
